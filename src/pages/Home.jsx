@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Layout } from "../components/Layout"
 import { useAuth } from "../context/UserContext"
+import "../styles/pages/Home.css"
 
 const Home = () => {
   const [products, setProducts] = useState([])
@@ -85,12 +86,12 @@ const Home = () => {
 
   return (
     <Layout>
-      <section>
+      <section className="home-intro">
         <h1>Bienvenido a Nuestra Tienda</h1>
         <p>Descubrí una selección exclusiva de productos para vos. Calidad, confianza y atención personalizada.</p>
       </section>
 
-      <section>
+      <section className="home-benefits">
         <h2>¿Por qué elegirnos?</h2>
         <ul>
           <li>
@@ -108,10 +109,9 @@ const Home = () => {
         </ul>
       </section>
 
-      <section>
+      <section className="products-section">
         <h2>Nuestros productos</h2>
         <p>Elegí entre nuestras categorías más populares.</p>
-
 
         {
           showPopup && <section className="popup-edit">
@@ -152,9 +152,9 @@ const Home = () => {
           </section>
         }
 
-        <div>
+        <div className="products-grid">
           {
-            products.map((product) => <div key={product.id}>
+            products.map((product) => <div key={product.id} className="product-card">
               <h2 key={product.id}>{product.title}</h2>
               <img width="80px" src={product.image} alt={`Imagen de ${product.title}`} />
               <p>${product.price}</p>
