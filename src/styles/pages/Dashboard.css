@@ -1,0 +1,93 @@
+.dashboard-section {
+  background-color: #f5f9ff;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.dashboard-card {
+  background-color: white;
+  text-align: center;
+  border: 1px solid #dceeff;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card h2 {
+  color: #0d6efd;
+  text-align: center;
+}
+
+.dashboard-intro {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dashboard-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #dceeff;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+.dashboard-form button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dashboard-form button:hover {
+  background-color: #084298;
+}
+
+.error-msg {
+  color: red;
+  text-align: center;
+}
+
+/* Responsive Mobile: 480px */
+@media (max-width: 480px) {
+  .dashboard-card {
+    padding: 20px;
+    max-width: 95%;
+  }
+}
+
+/* Tablet: 880px */
+@media (max-width: 880px) and (min-width: 481px) {
+  .dashboard-card {
+    max-width: 600px;
+  }
+}

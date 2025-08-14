@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Layout } from "../components/Layout"
+import "../styles/pages/Dashboard.css"
 
 const Dashboard = () => {
   const [name, setName] = useState("")
@@ -7,8 +8,6 @@ const Dashboard = () => {
   const [description, setDescription] = useState("")
   const [product, setProduct] = useState(null)
   const [error, setError] = useState(null)
-
-
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -51,40 +50,58 @@ const Dashboard = () => {
 
   return (
     <Layout>
-      <h1>Panel de Administración</h1>
+      <section className="dashboard-section">
+        <div className="dashboard-card">
+          <h2>Panel de Administración</h2>
+          <p className="dashboard-intro">Cargar nuevo producto en la tienda</p>
 
-      <section>
-        <h2>Cargar nuevo producto</h2>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label>Nombre del producto:</label>
-            <input type="text" name="nombre" onChange={(e) => setName(e.target.value)} value={name} />
-          </div>
+          <form onSubmit={handleSubmit} className="dashboard-form">
+            <div className="form-group">
+              <label>Nombre del producto:</label>
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Ej: Camiseta UTN"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+              />
+            </div>
 
-          <div>
-            <label>Precio:</label>
-            <input type="number" name="precio" onChange={(e) => setPrice(e.target.value)} value={price} />
-          </div>
+            <div className="form-group">
+              <label>Precio:</label>
+              <input
+                type="number"
+                name="precio"
+                placeholder="Ej: 1999"
+                onChange={(e) => setPrice(e.target.value)}
+                value={price}
+              />
+            </div>
 
-          <div>
-            <label>Descripción:</label>
-            <textarea name="descripcion" rows="4" onChange={(e) => setDescription(e.target.value)} value={description} />
-          </div>
+            <div className="form-group">
+              <label>Descripción:</label>
+              <textarea
+                name="descripcion"
+                rows="4"
+                placeholder="Describe el producto..."
+                onChange={(e) => setDescription(e.target.value)}
+                value={description}
+              />
+            </div>
 
-          {
-            error && <p className="error">{error}</p>
-          }
+            {error && <p className="error-msg">{error}</p>}
 
-          <button>Guardar producto</button>
-        </form>
+            <button type="submit">Guardar producto</button>
+          </form>
 
-        {
-          product && <div>
-            <h3>{product.title}</h3>
-            <p>${product.price}</p>
-            <p>{product.description}</p>
-          </div>
-        }
+          {product && (
+            <div className="product-preview">
+              <h3>{product.title}</h3>
+              <p className="price">${product.price}</p>
+              <p>{product.description}</p>
+            </div>
+          )}
+        </div>
       </section>
     </Layout>
   )
