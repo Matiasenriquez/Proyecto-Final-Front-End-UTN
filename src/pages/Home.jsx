@@ -85,6 +85,10 @@ const Home = () => {
       console.log(error)
     }
   }
+  //función para que la busqueda de productos del usuario se realice en tiempo real
+  const filteredProducts = products.filter(
+    product => product.title.toLowerCase().includes(search.toLowerCase())
+  )
 
   return (
     <Layout>
@@ -114,7 +118,14 @@ const Home = () => {
       <section className="products-section">
         <h2>Nuestros productos</h2>
         <p>Elegí entre nuestras categorías más populares.</p>
-
+        {/* Barra de busqueda nueva para que los usuarios busquen cosas */}
+        <input
+          type="text"
+          placeholder="Pruebe buscar algo aca"
+          className="search-input"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
         {
           showPopup && <section className="popup-edit">
             <h2>Editando producto.</h2>
@@ -153,10 +164,9 @@ const Home = () => {
             </form>
           </section>
         }
-
         <div className="products-grid">
           {
-            products.map((product) => <div key={product.id} className="product-card">
+            filteredProducts.map((product) => <div key={product.id} className="product-card">
               <h2 key={product.id}>{product.title}</h2>
               <img width="80px" src={product.image} alt={`Imagen de ${product.title}`} />
               <p style={{ "fontWeight": "bold", "fontSize": "25px" }}>${product.price}</p>
