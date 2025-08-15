@@ -47,6 +47,11 @@
 /* Sección productos */
 .products-section {
   padding: 20px;
+  text-align: center;
+}
+
+.products-section p {
+  text-align: center;
 }
 
 .products-section h2 {
