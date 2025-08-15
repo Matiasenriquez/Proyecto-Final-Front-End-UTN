@@ -12,6 +12,8 @@ const Home = () => {
   const [descriptionEdit, setDescriptionEdit] = useState("")
   const [categoryEdit, setCategoryEdit] = useState("")
   const [imageEdit, setImageEdit] = useState("")
+  //consigna: barra de busquedas de productos, estado para almacenar lo que el usuario escriba
+  const [search, setSearch] = useState("")
 
   // simulando existencia del usuario, proximamente este estado será global
   const { user } = useAuth()
