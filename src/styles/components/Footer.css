@@ -27,6 +27,7 @@ footer {
 
 .footer-section ul {
   list-style: none;
+  /*para sacar los puntos de la lista*/
   padding: 0;
 }
 
