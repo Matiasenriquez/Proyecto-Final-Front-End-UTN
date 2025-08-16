@@ -1,16 +1,57 @@
 # Base proyecto final cursada
-- Nombre del proyecto: "Proyecto Final Front-End para la Diplomatura en Desarrollo Web Full Stack de la UTN"
-- Objetivo general:
-Presentar los contenidos trabajados durante la primera parte de la Diplomatura en Desarrollo Web Full Stack de la Universidad Tecnológica Nacional, correspondiente al módulo “Programador Web Inicial – Front End Developer – Turno Tarde”. En esta etapa se abordaron tecnologías y herramientas como HTML, CSS, Git y GitHub, JavaScript y su librería React, aplicadas al desarrollo de una página web que integró y puso en práctica todos los conocimientos adquiridos.
-- Funcionalidades implementadas: registro e inicio de sesión con validación de datos, barra de búsqueda para productos con actualización en tiempo real, panel de administración para subir y editar productos para administradores.
-- Instrucciones para ejecutar localmente
-Como ejecutar localmente
-- Dirigirse al siguiente repositorio https://github.com/Matiasenriquez/Proyecto-Final-Front-End-UTN
-- Descargar el repositorio desde la sección "<> Code"
-- Descargar como archivo ZIP
-- Descomprimir el archivo y abrirlo utilizando la aplicación visual studio code
-- Acceder a la consola de visual Studio code, mediante el menú superior, terminal - nueva terminal, o en inglés terminal - new terminal. También se puede acceder mediante el atajo de teclado ctrl + Ñ.
-- Copiar y pegar la siguiente linea de comandos
-	- npm install
-	- npm run dev
-- Una vez finalizado la ejecución de ambos comandos, ingresar al link proporcionado en la terminal, ejemplo: ➜  Local:   http://localhost:5173/
+
+Proyecto Final Cursada: E-commerce de la UTN
+
+Este repositorio contiene el proyecto final desarrollado para la Diplomatura en Desarrollo Web Full Stack de la Universidad Tecnológica Nacional (UTN). El objetivo de este trabajo fue integrar y aplicar los conocimientos adquiridos en el módulo “Programador Web Inicial – Front End Developer – Turno Tarde”.
+
+Características y Tecnologías
+
+Este proyecto es una aplicación web de e-commerce que demuestra el manejo de las siguientes tecnologías y conceptos:
+
+    HTML, CSS: Estructura y diseño de la página.
+
+    Git y GitHub: Control de versiones y colaboración en equipo.
+
+    JavaScript y React: Lógica del lado del cliente y desarrollo de componentes.
+
+    Funcionalidades Principales:
+
+        Registro e Inicio de Sesión: Con validación de datos.
+
+        Barra de Búsqueda de Productos: Filtra y actualiza los resultados en tiempo real.
+
+        Panel de Administración: Permite a los administradores subir, editar y eliminar productos.
+
+Instrucciones para la Ejecución Local
+
+Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno de desarrollo.
+
+    Clonar el Repositorio
+
+        Dirígete al siguiente enlace: https://github.com/Matiasenriquez/Proyecto-Final-Front-End-UTN
+
+        Haz clic en el botón <> Code y selecciona la opción Download ZIP.
+
+        Descomprime el archivo ZIP.
+
+    Abrir en Visual Studio Code
+
+        Abre la carpeta del proyecto con Visual Studio Code.
+
+        Accede a la terminal integrada:
+
+            Ve al menú superior: Terminal > New Terminal.
+
+            Usa el atajo de teclado: Ctrl + Ñ.
+
+    Instalar Dependencias y Ejecutar
+
+        En la terminal, ejecuta los siguientes comandos para instalar las dependencias y levantar el servidor de desarrollo:
+        Bash
+
+    npm install
+    npm run dev
+
+Acceder a la Aplicación
+
+    Una vez que los comandos finalicen, haz clic en el enlace que aparecerá en la terminal (ejemplo: http://localhost:5173/) para ver la aplicación en tu navegador.
