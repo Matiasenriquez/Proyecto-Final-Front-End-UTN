@@ -23,7 +23,7 @@ const Footer = () => {
           <h4>Enlaces</h4>
           <ul>
             <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/productos">Productos</Link></li>
+            <li><Link to="/sobreNosotros">Sobre Nosotros</Link></li>
             <li><Link to="/contacto">Contacto -- acceder acá para probar NotFound </Link></li>
           </ul>
         </div>

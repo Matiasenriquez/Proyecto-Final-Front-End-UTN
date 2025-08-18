@@ -7,18 +7,22 @@ const AboutUs = () => {
       <section className="about-section">
         <div className="about-cards-container">
           <div className="about-card">
-            <h3>De qué trata el proyecto</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde, eaque eveniet animi sed quisquam exercitationem voluptatem reiciendis impedit officia quidem nostrum asperiores ullam esse, assumenda ducimus laborum quo at!</p>
+            <h3>Sobre el Proyecto</h3>
+            <p>Este proyecto es una aplicación de e-commerce desarrollada como entrega final de la primera etapa de la Diplomatura en Desarrollo Web Full Stack (UTN).</p>
+            <p>Forma parte del módulo Desarrollador Web Front-End, en el cual, a lo largo de cinco meses, trabajamos en los contenidos de la diplomatura guiados por el profesor Gabriel Alberini.</p>
           </div>
 
           <div className="about-card">
-            <h3>A quién está dirigido</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, accusantium eveniet? Quaerat beatae mollitia illum perferendis, sed laudantium consectetur vero accusamus velit reprehenderit officia consequuntur ducimus ratione quasi ipsam error.</p>
+            <h3>¿A quién está dirigido?</h3>
+            <p>El proyecto es de acceso público, por lo que cualquier persona interesada puede participar y contribuir con sus conocimientos.</p>
+            <p>Las colaboraciones son bienvenidas siempre que respeten los lineamientos establecidos y aporten mejoras que enriquezcan el proyecto.</p>
           </div>
 
-          <div className="about-card">
-            <h3>Qué tecnologías se usaron</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia earum dolore reprehenderit, non impedit molestias, aut facilis quia consequuntur minus iusto enim, numquam voluptatibus. Ratione tempora placeat exercitationem hic laborum!</p>
+          <div className="about-card" style={{ "list-style-type": "none" }}>
+            <h3>Tecnologías utilizadas</h3>
+            <li>HTML y CSS: Definición de la estructura y diseño de la aplicación.</li>
+            <li>Git y GitHub: Control de versiones y colaboración en equipo.</li>
+            <li>JavaScript y React: Desarrollo de la lógica del cliente y creación de componentes dinámicos.</li>
           </div>
         </div>
       </section>
