@@ -58,7 +58,6 @@
 .register-form button {
   background-color: #0d6efd;
   color: white;
-  border: black solid 1px;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
