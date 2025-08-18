@@ -1,16 +1,7 @@
-:root {
-  --primary-blue: #0d6efd;
-  --dark-text: #212529;
-  --light-text: #6c757d;
-  --light-gray-bg: #f8f9fa;
-  --border-color: #dee2e6;
-  --card-bg: white;
-}
-
 body {
   line-height: 1.6;
-  color: var(--dark-text);
-  background-color: var(--light-gray-bg);
+  color: #212529;
+  background-color: #f8f9fa;
 }
 
 .home-intro {
@@ -19,13 +10,13 @@ body {
 }
 
 .home-intro h1 {
-  color: var(--primary-blue);
+  color: #0d6efd;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .home-intro p {
-  color: var(--light-text);
+  color: #6c757d;
   max-width: 600px;
   margin: 0 auto;
   font-size: 1.1rem;
@@ -37,7 +28,7 @@ body {
 }
 
 .home-benefits h2 {
-  color: var(--primary-blue);
+  color: #0d6efd;
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -53,7 +44,7 @@ body {
 }
 
 .home-benefits li {
-  background-color: var(--card-bg);
+  background-color: white;
   border: 1px solid #dceeff;
   border-radius: 10px;
   padding: 2rem;
@@ -74,7 +65,7 @@ body {
 }
 
 .products-section h2 {
-  color: var(--primary-blue);
+  color: #0d6efd;
   font-size: 2rem;
 }
 
@@ -83,7 +74,7 @@ body {
   max-width: 500px;
   padding: 0.75rem 1rem;
   margin: 1.5rem auto;
-  border: 2px solid var(--border-color);
+  border: 2px solid #dee2e6;
   border-radius: 25px;
   font-size: 1rem;
   outline: none;
@@ -91,7 +82,7 @@ body {
 }
 
 .search-input:focus {
-  border-color: var(--primary-blue);
+  border-color: #0d6efd;
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
 }
 
@@ -102,8 +93,8 @@ body {
 }
 
 .product-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
+  background-color: white;
+  border: 1px solid #dee2e6;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
@@ -127,7 +118,7 @@ body {
 
 .product-card h2 {
   font-size: 1.25rem;
-  color: var(--dark-text);
+  color: #212529;
   margin-bottom: 0.5rem;
   height: 3rem;
   padding-bottom: 1rem;
@@ -135,17 +126,17 @@ body {
 
 .product-card p {
   margin: 0.5rem 0;
-  color: var(--light-text);
+  color: #6c757d;
 }
 
 .product-card p:nth-of-type(1) {
   font-weight: bold;
   font-size: 1.5rem;
-  color: var(--primary-blue);
+  color: #0d6efd;
 }
 
 .product-card strong {
-  color: var(--primary-blue);
+  color: #0d6efd;
 }
 
 .product-card .button-container {
@@ -153,7 +144,7 @@ body {
 }
 
 .product-card button {
-  background-color: var(--primary-blue);
+  background-color: #0d6efd;
   color: white;
   border: none;
   padding: 0.75rem 1.2rem;
