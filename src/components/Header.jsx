@@ -40,6 +40,7 @@ const Header = () => {
             <>
               <li><Link to="/">Inicio</Link></li>
               <li><Link to="/dashboard">Dashboard</Link></li>
+              <li><Link to="/sobreNosotros">Sobre Nosotros</Link></li>
               <button onClick={handleLogout}>Cerrar sesión</button>
             </>
           )}
@@ -47,6 +48,7 @@ const Header = () => {
             <>
               <li><Link to="/login">Login</Link></li>
               <li><Link to="/registrate">Registrate</Link></li>
+              <li><Link to="/sobreNosotros">Sobre Nosotros</Link></li>
             </>
           )}
 
