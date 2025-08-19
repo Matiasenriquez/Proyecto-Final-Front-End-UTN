@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { Layout } from "../components/Layout"
 import "../styles/pages/Register.css"
+import { useNavigate } from "react-router-dom"
+import { useAuth } from "../context/UserContext"
 
 const Register = () => {
   const [username, setUsername] = useState("")
@@ -9,7 +11,10 @@ const Register = () => {
   const [error, setError] = useState("")
   const [success, setSuccess] = useState("")
 
-  const handleSubmit = (e) => {
+  const navigate = useNavigate()
+  const { register } = useAuth()
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setError("")
     setSuccess("")
@@ -19,13 +24,16 @@ const Register = () => {
       return
     }
 
-    const newUser = { username, email, password }
-    console.log(newUser)
-    setSuccess("Usuario registrado con éxito")
-
-    setUsername("")
-    setEmail("")
-    setPassword("")
+    try {
+      await register(username, email, password)
+      setSuccess("Usuario registrado con éxito")
+      setUsername("")
+      setEmail("")
+      setPassword("")
+      setTimeout(() => navigate("/"), 2000)
+    } catch (err) {
+      setError("Hubo un error en el registro del usuario")
+    }
   }
 
   return (

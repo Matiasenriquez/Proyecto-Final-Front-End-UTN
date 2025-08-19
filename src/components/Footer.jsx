@@ -14,7 +14,7 @@ const Footer = () => {
               alt="Logo Tienda"
               className="footer-logo"
             />
-            <h4>Tienda de la UTN</h4>
+            <h4>Tienda de Matrix</h4>
           </div>
           <p>La posible competencia de mercadolibre.</p>
         </div>

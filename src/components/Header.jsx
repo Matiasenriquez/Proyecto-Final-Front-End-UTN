@@ -31,7 +31,7 @@ const Header = () => {
             to="/"
             style={{ color: 'white', textDecoration: 'none', fontWeight: 'bold' }}
           >
-            Tienda de la UTN
+            Tienda de Mati
           </Link>
         </div>
 
