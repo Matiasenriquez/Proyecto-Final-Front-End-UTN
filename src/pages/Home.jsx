@@ -169,7 +169,7 @@ const Home = () => {
             filteredProducts.map((product) => <div key={product.id} className="product-card">
               <h2 key={product.id}>{product.title}</h2>
               <img width="80px" src={product.image} alt={`Imagen de ${product.title}`} />
-              <p style={{ "fontWeight": "bold", "fontSize": "25px" }}>${product.price}</p>
+              <p style={{ "fontWeight": "bold", "fontSize": "25px", "color": "#0d6efd" }}>${product.price}</p>
               <p>{product.description}</p>
               <p><strong>{product.category}</strong></p>
               {

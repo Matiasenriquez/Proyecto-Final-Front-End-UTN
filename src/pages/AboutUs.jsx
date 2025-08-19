@@ -18,11 +18,13 @@ const AboutUs = () => {
             <p>Las colaboraciones son bienvenidas siempre que respeten los lineamientos establecidos y aporten mejoras que enriquezcan el proyecto.</p>
           </div>
 
-          <div className="about-card" style={{ "list-style-type": "none" }}>
+          <div className="about-card">
             <h3>Tecnologías utilizadas</h3>
-            <li>HTML y CSS: Definición de la estructura y diseño de la aplicación.</li>
-            <li>Git y GitHub: Control de versiones y colaboración en equipo.</li>
-            <li>JavaScript y React: Desarrollo de la lógica del cliente y creación de componentes dinámicos.</li>
+            <ul style={{ listStyleType: "none", padding: 0 }}>
+              <li>HTML y CSS: Definición de la estructura y diseño de la aplicación.</li>
+              <li>Git y GitHub: Control de versiones y colaboración en equipo.</li>
+              <li>JavaScript y React: Desarrollo de la lógica del cliente y creación de componentes dinámicos.</li>
+            </ul>
           </div>
         </div>
       </section>

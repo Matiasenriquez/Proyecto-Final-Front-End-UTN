@@ -23,17 +23,15 @@ const Header = () => {
     <header>
       <nav>
         <div className="logo">
-          <img
-            src="https://quois.com/wp-content/uploads/2021/08/eCommerce-1.png"
-            alt="Logo"
-          />
-          <Link
-            to="/"
-            style={{ color: 'white', textDecoration: 'none', fontWeight: 'bold' }}
-          >
-            Tienda de Mati
+          <Link to="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
+            <img
+              src="https://quois.com/wp-content/uploads/2021/08/eCommerce-1.png"
+              alt="Logo"
+              style={{ marginRight: "10px" }}
+            />
           </Link>
         </div>
+
 
         <ul>
           {user && (
@@ -51,16 +49,6 @@ const Header = () => {
               <li><Link to="/sobreNosotros">Sobre Nosotros</Link></li>
             </>
           )}
-
-          {/* Botón para poner oscuro o claro */}
-          <li>
-            <button
-              className="theme-toggle"
-              onClick={() => setDarkMode(!darkMode)}
-            > Tema:
-              {darkMode ? "☀️ Claro" : "🌙 Oscuro"}
-            </button>
-          </li>
         </ul>
       </nav>
     </header>
